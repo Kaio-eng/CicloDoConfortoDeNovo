@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>site</title>
+        <link rel="stylesheet" type="text/css" href="style4.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+       <nav>
+            <img id="foto"  width="100px" src="e (1).png";>
+            <ul>
+                <li><a href="index4.html"><b><u>Início</u></b></a></li>
+                <li><a href="teste.html"><b><u>Produtos</u></b></a></li>
+                <li><a href="contato.html"><b><u>Contato</u></b></a></li>
+
+            </ul>
+
+       </nav>
+
+       <div class="contato">
+            <h1>Contato com a distribuidora</h1>
+       </div>
+   <section class="label">
+       <!-- Campo de texto simples -->
+    <label id="color1" for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+    <br><br>
+
+    <!-- Campo para e-mail -->
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+    <br><br>
+
+    <!-- Campo para senha -->
+    <label for="mens">Dúvida:</label>
+    <input type="text" id="mens" name="mens" placeholder="Digite sua mensagem">
+    <input  onclick="exibir()" id="subm" type="submit" value="Enviar">
+    <br><br>
+</section>
+<script>
+    function exibir(){
+        var nome = document.getElementById("nome").value;
+        var email = document.getElementById("email").value;
+        var mens = document.getElementById("mens").value;
+        alert("Nome: " +nome + "\nEmail: " +email + "\nDúvida: " + mens);
+   }
+</script>
+
+
+<p>Caso tenha dúvidas, entre em contato através do SAC ou pelo e-mail. </p>
+<p>Telefone de contato: (31) 9999-9999</p>
+<p>E-mail de contato: dkbebidas@suporte.com</p>
+<section class="divifo">
+<div class="formu">
+<form action="https://api.staticforms.xyz/submit" method="post">
+    <input type="text" name="name" placeholder="Nome">
+    <input type="text" name="email" placeholder="Email" />
+    <textarea  id="messform" name="message"  placeholder="Escreva sua mensagem:"></textarea>
+    <input type="text" name="honeypot" style="display:none">
+    <input type="hidden" name="accessKey" value="0923c089-baf3-4bee-9a4a-9148852d5a8a">
+    <input type="hidden" name="subject" value="Contact us from - example.com" />
+    <input type="hidden" name="replyTo" value="@">
+    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index4.html">
+    <input type="submit" id="env"  value="Enviar" />
+</form>
+</div>    
+<div>
+    <img id="foto"  width="100px" src="e (1).png";>
+</div>
+</section>
+</body>
+</html>

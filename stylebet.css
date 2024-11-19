@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    max-width: 800px; /* Largura máxima do container */
+    margin: auto; /* Centraliza o container */
+}
+
+.carousel-item img {
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+    object-fit: cover; /* Ajusta o tamanho da imagem para cobrir o espaço */
+    height: 400px; /* Define uma altura fixa para as imagens do carrossel */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para os controles */
+    border-radius: 50%; /* Tornar os ícones circulares */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Largura dos botões de controle */
+}
+
+
+.secao-inicial {
+    max-width: 50%;
+    text-align: left;
+    margin-right: auto;
+}
+
+.secao-como-funciona {
+    max-width: 50%;
+    text-align: right;
+    margin-left: auto;
+}
